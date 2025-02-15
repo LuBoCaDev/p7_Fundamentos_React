@@ -1,0 +1,159 @@
+.AdvertsPage {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.advertsPage-empty {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(var(--color-danger));
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(145deg, rgba(var(--color-danger), 0.8), rgba(var(--color-danger), 0.3));
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(var(--color-danger), 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.filter-section {
+  background: linear-gradient(135deg, rgba(255, 94, 58, 0.7), rgba(255, 154, 72, 0.7));
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.filter-section p,
+.filter-section label {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.filter-section input {
+  accent-color: rgb(255, 94, 58);
+}
+
+.filter-section input[type="number"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 94, 58, 0.8);
+  background: rgba(255, 154, 72, 0.2);
+  color: white;
+  font-weight: bold;
+}
+
+.filter-section input[type="number"]::placeholder {
+  color: rgba(255, 94, 58, 0.6);
+}
+
+.formField {
+  background: linear-gradient(145deg, rgba(255, 94, 58, 0.8), rgba(255, 154, 72, 0.3));
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formField label {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.formField input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 94, 58, 0.8);
+  background: rgba(255, 154, 72, 0.2);
+  color: white;
+  font-weight: bold;
+}
+
+.formField input::placeholder {
+  color: rgba(255, 94, 58, 0.6);
+}
+
+.adsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.advert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  padding: 15px;
+  border: 3px solid rgba(255, 94, 58, 0.8);
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(255, 94, 58, 0.2), rgba(255, 154, 72, 0.2));
+  box-shadow: 0 0 10px rgba(255, 94, 58, 0.5), inset 0 0 8px rgba(255, 154, 72, 0.4);
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.advert:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 94, 58, 0.6), inset 0 0 10px rgba(255, 154, 72, 0.5);
+}
+
+.advert-image {
+  width: 180px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 94, 58, 0.6);
+  box-shadow: 0 0 8px rgba(255, 94, 58, 0.4);
+}
+
+.advert-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.advert:hover .advert-image img {
+  transform: scale(1.05);
+}
+
+.advert-name {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 94, 58);
+  text-shadow: 2px 2px 6px rgba(255, 94, 58, 0.5);
+  text-align: center;
+  transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.advert:hover .advert-name {
+  text-shadow: 3px 3px 10px rgba(255, 94, 58, 0.7);
+  transform: scale(1.1);
+}

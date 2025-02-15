@@ -1,0 +1,75 @@
+.newAdvertPage-form {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+}
+
+.newAdvertPage-form .formField {
+  margin-bottom: 18px;
+}
+
+.newAdvertPage-form label {
+  display: block;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.newAdvertPage-form input[type='text'],
+.newAdvertPage-form input[type='number'],
+.newAdvertPage-form input[type='file'],
+.newAdvertPage-form input[type='radio'],
+.newAdvertPage-form input[type='checkbox'] {
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 5px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: white;
+}
+
+.newAdvertPage-form input[type='radio'],
+.newAdvertPage-form input[type='checkbox'] {
+  width: auto;
+  margin-right: 8px;
+}
+
+.newAdvertPage-form span {
+  font-size: 14px;
+  color: white;
+}
+
+.newAdvertPage-form .photo-preview {
+  margin-top: 12px;
+}
+
+.newAdvertPage-form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgb(var(--color-highlight)), rgb(var(--color-accent)));
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0 5px 15px rgba(var(--color-highlight), 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.newAdvertPage-form .button:hover {
+  background: linear-gradient(135deg, rgb(var(--color-accent)), rgb(var(--color-highlight)));
+  transform: scale(1.05);
+}
+

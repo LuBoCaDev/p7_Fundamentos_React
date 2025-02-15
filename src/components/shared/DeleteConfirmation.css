@@ -1,0 +1,82 @@
+.confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.confirmation-box {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(var(--color-border), 0.1));
+  border: 2px solid rgb(var(--color-danger));
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  font-family: 'Georgia', serif;
+  text-align: center;
+  position: relative;
+  transform: scale(1);
+  animation: scaleUp 0.4s ease-in-out;
+}
+
+.confirmation-box p {
+  color: rgb(var(--color-danger));
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.confirmation-buttons button {
+  background-color: rgb(var(--color-danger));
+  border: 1px solid rgba(var(--color-danger), 0.6);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(var(--color-danger), 0.2);
+}
+
+.confirmation-buttons button:hover {
+  background-color: rgba(var(--color-danger), 0.9);
+  box-shadow: 0 8px 25px rgba(var(--color-danger), 0.3);
+  transform: translateY(-3px);
+}
+
+.confirmation-buttons button:disabled {
+  background-color: rgba(var(--color-danger), 0.5);
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}

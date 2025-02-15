@@ -1,0 +1,45 @@
+.formField {
+  --color-background: rgb(245, 248, 250);
+  --color-foreground: rgb(var(--color-secondary-text));
+  --color-focus: rgb(var(--color-primary-text));
+  padding: 12px 0;
+  background: linear-gradient(145deg, rgba(var(--color-background), 0.9), rgba(var(--color-foreground), 0.2));
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.formField-input {
+  background-color: transparent;
+  font-size: 20px;
+  height: 40px;
+  outline-style: none;
+  padding: 10px;
+  width: 100%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.formField-input:focus {
+  border-color: var(--color-focus);
+  box-shadow: 0 0 10px rgba(var(--color-focus), 0.6);
+}
+
+.formField-label span {
+  padding: 5px 0;
+  font-style: italic;
+}
+
+.formField-label span:first-letter {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(255, 94, 77, 0.4); /* Tono entre rosa y naranja */
+}
+
+.formField-label:has(:focus) {
+  color: rgb(var(--color-focus));
+  border-color: var(--color-focus);
+  text-shadow: 0px 0px 6px rgba(var(--color-focus), 0.3);
+}

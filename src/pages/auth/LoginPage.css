@@ -1,0 +1,114 @@
+.loginPage {
+  margin: 60px auto 0;
+  max-width: 500px;
+  padding: 20px;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(29, 161, 242, 0.1), rgba(224, 36, 94, 0.1));
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(var(--color-border), 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.loginPage:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
+}
+
+.loginPage-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: rgb(var(--color-highlight));
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 6px rgba(var(--color-accent), 0.3);
+}
+
+.loginPage-error {
+  background: rgba(var(--color-danger), 0.1);
+  border: 2px solid rgba(var(--color-danger), 0.3);
+  color: rgb(var(--color-danger));
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(var(--color-danger), 0.2);
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.loginForm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.loginForm-field label {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(var(--color-secondary-text));
+  font-size: 14px;
+}
+
+.loginForm-field input {
+  border: 2px solid rgba(var(--color-border), 0.8);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.loginForm-field input:focus {
+  border-color: rgb(var(--color-highlight));
+  box-shadow: 0 0 12px rgba(var(--color-glow), 0.8);
+}
+
+.loginForm-submit {
+  margin-top: 10px;
+  width: 100%;
+  background: linear-gradient(135deg, rgb(var(--color-highlight)), rgb(var(--color-accent)));
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  box-shadow: 0 5px 15px rgba(var(--color-highlight), 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.loginForm-submit:hover {
+  background: linear-gradient(135deg, rgb(var(--color-accent)), rgb(var(--color-highlight)));
+  box-shadow: 0 8px 20px rgba(var(--color-highlight), 0.7);
+  transform: scale(1.05);
+}
+
+.loginForm-submit:active {
+  transform: scale(0.98);
+}
+
+.loginForm-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loginForm-links a {
+  color: rgb(var(--color-highlight));
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.loginForm-links a:hover {
+  color: rgb(var(--color-accent));
+  text-decoration: underline;
+}
