@@ -35,7 +35,7 @@
 .formField-label span:first-letter {
   text-transform: capitalize;
   font-weight: bold;
-  text-shadow: 1px 1px 5px rgba(255, 94, 77, 0.4); /* Tono entre rosa y naranja */
+  text-shadow: 1px 1px 5px rgba(255, 94, 77, 0.4);
 }
 
 .formField-label:has(:focus) {

@@ -1,14 +1,11 @@
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-
 import { login } from './service';
 import { useAuth } from './context';
 import Button from '../../components/shared/Button';
 import FormField from '../../components/shared/FormField';
-
 import { isApiClientError } from '../../api/client';
 import { ApiClientError } from '../../api/error';
-
 import './LoginPage.css';
 
 function LoginPage() {

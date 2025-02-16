@@ -1,7 +1,7 @@
 import { logout } from '../../pages/auth/service';
 import Button from '../shared/Button';
 import { NavLink, useNavigate } from 'react-router-dom';
-import wallaLogo from '../../assets/peach.svg'; // ✅ Importamos la imagen
+import wallaLogo from '../../assets/peach.svg';
 import './Header.css';
 
 interface Props {
@@ -36,7 +36,6 @@ export default function Header({ onLogout }: Props) {
         </nav>
       </div>
 
-      {/* Lado Derecho: Botón de Logout */}
       <div className="header-right">
         <Button $variant="primary" onClick={handleLogoutClick}>
           Logout
